@@ -1,1 +1,74 @@
-werewEDUJIKWQDJKQWDH
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <style>
+        .beij {
+            background-color: #141414;
+        }
+
+        .chuangk {
+            width: 600px;
+            height: 400px;
+            background-color: rgba(255, 255, 255, 0.07);
+            margin: 350px auto;
+            border-radius: 50px;
+            box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input::before {
+            color: rgb(57, 57, 55);
+            content: "账号：";
+            font-family:"华文琥珀";
+            font-size: 17px;
+            text-shadow: #dd86f7 0px -1px , #39e2f8 1px 1px;
+        }
+        .input1::before {
+            color: rgb(57, 57, 55);
+            content: "密码：";
+            font-family:"华文琥珀";
+            font-size: 17px;
+            text-shadow: #dd86f7 0px -1px , #39e2f8 1px 1px;
+        }
+
+        input {
+            color: white;
+            border-radius: 1px;
+            margin: 15px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 5px solid #dbd8d8;
+            background-color: transparent !important;
+           outline: none;
+        }
+        input:focus{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 5px solid #b837df;
+        }
+    </style>
+</head>
+<!-- 背景颜色 -->
+
+<body class="beij">
+    <!-- 登录窗口 -->
+    <div class="chuangk">
+        <div class="inputMod">
+            <div class="input"><input onfocus="this.placeholder=''" class="shuru" type="text" placeholder="账号"></div>
+            <div class="input1"> <input onfocus="this.placeholder=''" class="shuru" type="password" name="" id="" placeholder="密码"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
