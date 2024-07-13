@@ -17,49 +17,91 @@
         .zhuce {
             background-color: #000000;
             height: 700px;
-            width: 800px;
-            border-radius: 70px;
+            width: 900px;
+            border-radius: 20px;
             color: #f5f5f7;
         }
 
         .zc {
-            height: 40px;
+            height: 43px;
             color: #f5f5f7;
             font-size: 20px;
-            margin-top: 20px;
+            margin-top: 60px;
             text-align: center;
+
         }
 
-        /* .nic{ 
+        .nic {
             height: 60px;
             width: 190px;
-            margin-top: 20px;
-            margin-left: 40px;
-           
-           
+            margin-top: 30px;
+            margin-left: 89px;
 
-        } */
+
+        }
+
+        input {
+            border: 0px;
+            font-size: 16px;
+        }
 
         .neir {
-            height: 30px;
-            width: 190px;
-        }
-        .neir1{
-            height: 30px;
-            width: 160px;
-           border-left: 0px;
+            width: 300px;
+            height: 43px;
+            outline: none;
+            border-radius: 5px;
 
         }
-        .tijiao{
-            height: 30px;
-            width: 30px;
+
+        input:focus {
+            border: 1px solid #86868b;
+        }
+
+        .neir1 {
+            width: 243px;
+            height: 43px;
+            outline: none;
+            border-radius: 5px 0px 0px 5px;
+            vertical-align: middle;
+   
+        }
+
+        .kkkk {
+            height: 43%;
+            width: 720px;
+            margin: 0 auto;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+
+        .tijiao {
+            vertical-align: middle;
+            height: 43px;
+            width: 60px;
             border: none;
-            background-color:#f5f5f7;
-            
-            
+            border-left: 1px solid #636363;
+            background-color: #f5f5f7;
+            border-radius: 0px 5px 5px 0px;
+
         }
 
+        .zck{
+          
+            width: 450px; 
+            margin: 0 auto;
+        } 
 
+        .zcan {
+            width: 450px;
+            height: 43px;
+            border-radius: 5px;
+            margin-top: 50px;
+            background-color: #f5f5f7;
+        }
     </style>
 </head>
 
@@ -68,20 +110,30 @@
     <div class="zhuce">
         <div class="zc">注册</div>
         <div class="nic">
-            <span>昵称 <input type="text" class="neir"></span>
+            <div>昵称 </div><input type="text" class="neir">
         </div>
         <!-- 邮箱 验证码 密码 确认密码 -->
         <div class="kkkk">
             <div class="youxiang">
-                <span>邮箱 <input type="text" class="neir"></span>
+                <div>邮箱</div> <input type="text" class="neir">
             </div>
             <div class="yanzm">
-                <span>验证码 <input type="text" class="neir1"><button type="submit" class="tijiao">提交</button></span>
-            </div>
-            <div></div>
-            <div></div>
-            
+                <!-- class 名与其他不一样 -->
+                <div>验证码 </div>
 
+                <input type="text" style="border-right: 0px;" class="neir1"><button type="submit"
+                    class="tijiao">发送</button>
+            </div>
+
+            <div class="mima">
+                <div>密码</div><input type="password" class="neir">
+            </div>
+            <div class="qrmima">
+                <div>确认密码</div><input type="password" class="neir">
+            </div>
+        </div>
+        <div class="zck">
+            <button class="zcan">注册</button>
         </div>
     </div>
 
