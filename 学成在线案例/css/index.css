@@ -1,0 +1,104 @@
+/* 首页 */
+/* 居中 */
+.wrapper{
+    margin: 0 auto;
+    width:1200px;
+}
+body{
+    background-color: #f3f5f7;
+}
+.header{
+    height:100px ;
+    background-color: #fff;
+    display: flex;
+}
+.header .wrapper{
+    display: flex;
+    padding-top: 29px  ;
+}
+/* logo */
+.logo a{
+    width: 195px;
+    height: 41px;
+    background-image: url(../images/logo.png);
+    display: block;
+    font-size: 0px;
+}
+/* 导航 */
+.daohang{
+margin-left: 102px;
+}
+.daohang ul{
+    display: flex;
+     
+}
+.daohang li  a{
+    display: block;
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+   
+}
+.daohang li{
+    margin-right: 24px;
+   
+}
+/* 默认 首页选中 以及a标签悬停  */
+.daohang li .moren,
+.daohang li a:hover{
+    border-bottom: 2px solid #00a4ff;
+
+}
+/* 搜索 */
+.sousuo{
+    /* 子级flex布局前提 */
+    display: flex;
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+    margin-left: 64px;
+    /* 加内边框调整  搜索框 与 输入关键词和搜索图标（按钮）间距 */
+    padding-left: 19px;
+    padding-right: 12px;
+}
+.sousuo input{
+    /* 输入框占满 父级div */
+    flex: 1; 
+/* 清除边框线  但点击时还会有焦点框*/
+    border: 0;
+    /* 清除焦点框 */
+    outline: none;
+    /* 透明 背景 */
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+/* 调整提示文字的参数 */
+.sousuo input::placeholder{
+    font-size: 14px;
+    color: #999;
+}
+.sousuo a{
+    /* 父级 display：flex  a变成弹性盒子了不用改行内块了 */
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/search.png);
+    /* flex布局 搜索图标居中 */
+    align-self: center;
+}
+
+/* 用户（ 头像 昵称） */
+.yonghu{
+    margin-left: 32px;
+    margin-top: 4px;
+}
+.yonghu img{
+    /*  行内块和行内 垂直方向对齐 */
+    vertical-align: middle;
+    margin: 7px;
+    
+}
+.yonghu span{
+    font-size: 16px;
+    color: #666;
+}
