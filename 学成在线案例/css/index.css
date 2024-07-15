@@ -1,56 +1,66 @@
 /* 首页 */
 /* 居中 */
-.wrapper{
+.wrapper {
     margin: 0 auto;
-    width:1200px;
+    width: 1200px;
 }
-body{
+
+body {
     background-color: #f3f5f7;
 }
-.header{
-    height:100px ;
+
+.header {
+    height: 100px;
     background-color: #fff;
     display: flex;
 }
-.header .wrapper{
+
+.header .wrapper {
     display: flex;
-    padding-top: 29px  ;
+    padding-top: 29px;
 }
+
 /* logo */
-.logo a{
+.logo a {
     width: 195px;
     height: 41px;
     background-image: url(../images/logo.png);
     display: block;
     font-size: 0px;
 }
+
 /* 导航 */
-.daohang{
-margin-left: 102px;
+.daohang {
+    margin-left: 102px;
 }
-.daohang ul{
+
+.daohang ul {
     display: flex;
-     
+
 }
-.daohang li  a{
+
+.daohang li a {
     display: block;
     padding: 6px 8px;
     line-height: 27px;
     font-size: 19px;
-   
+
 }
-.daohang li{
+
+.daohang li {
     margin-right: 24px;
-   
+
 }
+
 /* 默认 首页选中 以及a标签悬停  */
 .daohang li .moren,
-.daohang li a:hover{
+.daohang li a:hover {
     border-bottom: 2px solid #00a4ff;
 
 }
+
 /* 搜索 */
-.sousuo{
+.sousuo {
     /* 子级flex布局前提 */
     display: flex;
     width: 412px;
@@ -62,23 +72,26 @@ margin-left: 102px;
     padding-left: 19px;
     padding-right: 12px;
 }
-.sousuo input{
+
+.sousuo input {
     /* 输入框占满 父级div */
-    flex: 1; 
-/* 清除边框线  但点击时还会有焦点框*/
+    flex: 1;
+    /* 清除边框线  但点击时还会有焦点框*/
     border: 0;
     /* 清除焦点框 */
     outline: none;
     /* 透明 背景 */
     background-color: rgba(0, 0, 0, 0);
-    
+
 }
+
 /* 调整提示文字的参数 */
-.sousuo input::placeholder{
+.sousuo input::placeholder {
     font-size: 14px;
     color: #999;
 }
-.sousuo a{
+
+.sousuo a {
     /* 父级 display：flex  a变成弹性盒子了不用改行内块了 */
     width: 16px;
     height: 16px;
@@ -88,17 +101,250 @@ margin-left: 102px;
 }
 
 /* 用户（ 头像 昵称） */
-.yonghu{
+.yonghu {
     margin-left: 32px;
     margin-top: 4px;
 }
-.yonghu img{
+
+.yonghu img {
     /*  行内块和行内 垂直方向对齐 */
     vertical-align: middle;
     margin: 7px;
-    
+
 }
-.yonghu span{
+
+.yonghu span {
     font-size: 16px;
     color: #666;
+}
+
+
+
+
+
+/* banner  区域 */
+.banner {
+    height: 420px;
+    background-color: #0092cb;
+
+}
+
+.banner .wrapper {
+    /* 设置高 才会出现背景图 */
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+    /* 左右两个内容布局 */
+    display: flex;
+    /* 左右两边 */
+    justify-content: space-between;
+
+}
+
+.banner .left {
+    padding: 3px 20px;
+    width: 191px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.42);
+
+}
+
+.banner .left a {
+    /* 块级是父级100% */
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    /* 右箭头 尺寸小默认会铺满 +no-repeat */
+    /* 这里的是复合背景属性 */
+    background: url(../images/right.png) no-repeat right center;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+.banner .left a:hover {
+    color: #0092cb;
+    background-image: url(../images/right-hover.png);
+}
+
+.wrapper .right {
+    margin-top: 60px;
+    height: 305px;
+    width: 218px;
+    background-color: #209dd5;
+    border-radius: 10px;
+}
+
+.banner .right h3 {
+    margin-left: 14px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #ffff;
+    font-weight: 400;
+}
+
+.banner .right .content {
+    padding: 14px;
+    height: 257px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.banner .right dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.banner .right dt {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.banner .right dd {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.banner .right dd span {
+    color: #00a4ff;
+}
+
+.banner .right strong {
+    color: #7d7d7d;
+    font-weight: 400;
+}
+
+.banner .right a {
+    /* 转块级 */
+    display: block;
+    height: 32px;
+    background-color: #00a4ff;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: wheat;
+}
+
+/* 精品推荐 */
+.recommed {
+    display: flex;
+    margin-top: 11px;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 1px 0px rgba(211, 211, 211, 0.5);
+    line-height: 60px;
+}
+
+.recommed h3 {
+    font-size: 18px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+
+
+/* 精品区分三个不能flex3个均分 最左 最右 中间 中间两边间距左右不一  */
+
+.recommed ul {
+    /* 设置 ul 弹性伸缩比为1  占满除最左最右 其余空间*/
+    flex: 1;
+    display: flex;
+}
+
+.recommed ul li a {
+    /* 如果设置li 有边框线就会撑满高 a是被内容撑起来的 线高和字高一样  */
+    padding: 0 24px;
+    border-right: 1px solid #e0e0e0;
+    font-size: 18px;
+}
+
+/* 最右边是没有边框线的 */
+.recommed ul li:last-child a {
+    border-right: none;
+}
+
+.recommed .xiugai {
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+
+/* 课程推荐 大的排布 */
+.kec {
+    margin-top: 15px;
+}
+
+.biaot {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+
+}
+
+.biaot h3 {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.qb {
+    width: 70px;
+    /* padding-right: 20px; */
+    background-image: url(../images/more.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    font-size: 14px;
+    color: #999;
+}
+
+/* 课程内容 */
+.neir ul {
+
+    /* 挤在一排 */
+    display: flex;
+    /* 弹性盒子换行 */
+    flex-wrap: wrap;
+    /* 没有空隙  主轴对齐*/
+    justify-content: space-between;
+
+
+}
+
+.neir li {
+    margin-bottom: 14px;
+    width: 228px;
+    height: 271px;
+    background-color: pink;
+}
+
+.neir li .tu {
+    height: 156px;
+}
+
+.neir li .wz {
+    padding: 20px;
+    height: 115px;
+    background-color: #fff;
+}
+.neir li h4{
+    margin-bottom: 13px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.neir li .wz p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+.neir li .wz p span{
+    color: orange;
+}
+.neir li .wz p i{
+    font-style: normal;
 }
