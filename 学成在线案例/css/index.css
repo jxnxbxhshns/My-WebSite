@@ -330,21 +330,75 @@ body {
     height: 115px;
     background-color: #fff;
 }
-.neir li h4{
+
+.neir li h4 {
     margin-bottom: 13px;
     height: 40px;
     font-size: 14px;
     line-height: 20px;
     font-weight: 700;
 }
-.neir li .wz p{
+
+.neir li .wz p {
     font-size: 14px;
     line-height: 20px;
     color: #999;
 }
-.neir li .wz p span{
+
+.neir li .wz p span {
     color: orange;
 }
-.neir li .wz p i{
+
+.neir li .wz p i {
     font-style: normal;
 }
+
+/* 前端区域 */
+.qdkc{
+    margin-top: 15px;
+}
+.hd{
+    display: flex;
+    justify-content: space-between;
+height: 60px;
+line-height: 60px;
+}
+.hd h3{
+    font-size: 21px;
+    font-weight: 400;
+}
+.hd .more{
+   
+    font-size: 14px;
+    color: #999;
+}
+.hd ul{
+    display: flex;
+}
+.hd li {
+    margin-right: 60px;
+    font-size: 16px;
+}
+.hd ul .xuanzhong{
+    color: #00a4ff;
+}
+.qd{
+    display: flex;
+    justify-content: space-between;
+}
+.qdkc .zuo{
+    width: 228px;
+    
+
+}
+.qdkc .you{
+    width: 957px;
+   
+}
+.qdkc .you .top{
+    margin-bottom: 15px;
+    height: 100px;
+}
+/* .qd .you ul {
+    display: flex;
+} */
